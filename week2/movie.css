@@ -1,7 +1,102 @@
 body {
-  background-image: "background.png"
+  background-image: url("pictures/background.png");
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 8pt;
   margin: 0;
   padding: 0;
 }
+
+div#banner {
+  display: block;
+  background-image: url("pictures/bannerbackground.png");
+  background-repeat: repeat-x;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+div#content {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px gray solid;
+  overflow: hidden;
+}
+
+div#overview {
+  float: right;
+  display: inline;
+}
+
+#rating {
+  width: 550px;
+}
+
+div#rating {
+  background-repeat: repeat-x;
+  background-image: url("pictures/rottenbackground.png");
+  background-size: 83px;
+  font: 8pt standard;
+  color: white;
+}
+
+div#rating span {
+  font: 48pt bold;
+  color: red;
+}
+
+div#rating img {
+  height: 83px;
+  vertical-align: bottom;
+}
+
+#colums {
+  width: 47%;
+  border-spacing: 2%;
+}
+
+#personinfo {
+  font-style: italic;
+
+}
+
+.column #box {
+  fond: bold 8pt;
+  background-color: #E1D697;
+  border: thick gray 2px;
+  overflow: hidden;
+}
+
+.column img {
+  
+}
+
+div#rightbar {
+  width: 250px;
+  background-color: #A2B964;
+  font-family: Arial, sans-serif;
+  font-size: 8pt;
+  float: right;
+}
+
+#bottombar {
+
+}
+
+div#checkicon {
+  right: 0px;
+  bottom: 0px;
+  position: fixed;
+}
+
+.column {
+  width: 47%;
+  margin-left: 2%;
+  float: left;
+}
+
