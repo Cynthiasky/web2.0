@@ -1,3 +1,8 @@
+/*
+  css page for web2.0 week2
+  creat a page for a movie review web site named Rancid Tomatos for the recent film TMNT
+            -by Tianyi Li; 2016 software engeneering, SYSU
+*/
 body {
   background-image: url("pictures/background.png");
   font-family: Verdana, Tahoma, sans-serif;
@@ -5,12 +10,16 @@ body {
   margin: 0;
   padding: 0;
 }
+div {
+  overflow: hidden;
+}
 
-div#banner {
+#banner {
   display: block;
   background-image: url("pictures/bannerbackground.png");
   background-repeat: repeat-x;
   text-align: center;
+  height: 50px;
 }
 
 h1 {
@@ -20,7 +29,7 @@ h1 {
   font-family: Tahoma, Verdana, sans-serif;
 }
 
-div#content {
+#content {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -28,75 +37,96 @@ div#content {
   overflow: hidden;
 }
 
-div#overview {
+#overview {
   float: right;
   display: inline;
 }
 
-#rating {
+#left-central {
   width: 550px;
 }
 
-div#rating {
+#rating {
   background-repeat: repeat-x;
   background-image: url("pictures/rottenbackground.png");
-  background-size: 83px;
-  font: 8pt standard;
+  height: 83px;
+  font: standard 8pt;
   color: white;
 }
 
-div#rating span {
-  font: 48pt bold;
+#rating span {
+  font-size: 48pt;
+  font-weight: bold;
   color: red;
 }
 
-div#rating img {
+#rating img {
   height: 83px;
   vertical-align: bottom;
 }
 
-#colums {
-  width: 47%;
-  border-spacing: 2%;
-}
-
-#personinfo {
+p.personinfo {
   font-style: italic;
-
-}
-
-.column #box {
-  fond: bold 8pt;
-  background-color: #E1D697;
-  border: thick gray 2px;
   overflow: hidden;
 }
 
-.column img {
-  
+p.personinfo img {
+  margin-bottom: 3em;
 }
 
-div#rightbar {
-  width: 250px;
-  background-color: #A2B964;
-  font-family: Arial, sans-serif;
-  font-size: 8pt;
-  float: right;
-}
-
-#bottombar {
-
-}
-
-div#checkicon {
-  right: 0px;
-  bottom: 0px;
-  position: fixed;
+p.box {
+  fond-size: 8pt;
+  font-weight: bold;
+  background-color: #E1D697;
+  border: solid gray 2px;
+  padding: 8px;
+  /*border-width: thick;*/
+  overflow: hidden;
 }
 
 .column {
   width: 47%;
   margin-left: 2%;
   float: left;
+  overflow: hidden;
 }
 
+.column img {
+  margin-right: 5px;
+  float: left;
+}
+
+#rightbar {
+  width: 250px;
+  background-color: #A2B964;
+  font-family: Arial, sans-serif;
+  font-size: 8pt;
+  float: right;
+  clear: left;
+}
+
+#rightbar dl {
+  padding: 10px;
+}
+
+
+#rightbar dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+#bottombar {
+  clear: right;
+  clear: left;
+  background-color: #A2B964;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+}
+
+#checkicon {
+  right: 0px;
+  bottom: 0px;
+  position: fixed;
+  border: none;
+}
