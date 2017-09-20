@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 div {
   overflow: hidden;
 }
@@ -34,7 +35,6 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   border: 4px gray solid;
-  overflow: hidden;
 }
 
 #overview {
@@ -67,20 +67,17 @@ h1 {
 
 p.personinfo {
   font-style: italic;
-  overflow: hidden;
-}
-
-p.personinfo img {
   margin-bottom: 3em;
 }
 
 p.box {
+  /*temp: adjust font-family to make boxes align*/
+  /*font-family: Arial, sans-serif;*/
   fond-size: 8pt;
   font-weight: bold;
   background-color: #E1D697;
   border: solid gray 2px;
   padding: 8px;
-  /*border-width: thick;*/
   overflow: hidden;
 }
 
@@ -88,7 +85,6 @@ p.box {
   width: 47%;
   margin-left: 2%;
   float: left;
-  overflow: hidden;
 }
 
 .column img {
@@ -115,6 +111,10 @@ p.box {
   margin-top: 1em;
 }
 
+#rightbar img {
+  margin-bottom: 1em;
+}
+
 #bottombar {
   clear: right;
   clear: left;
@@ -122,6 +122,8 @@ p.box {
   padding: 5px;
   margin: 0;
   text-align: center;
+  width: 800px;
+  float: left;
 }
 
 #checkicon {
