@@ -50,7 +50,8 @@ h1 {
   background-repeat: repeat-x;
   background-image: url("pictures/rottenbackground.png");
   height: 83px;
-  font: standard 8pt;
+  font-size: 8pt;
+  font-style: normal;
   color: white;
 }
 
@@ -73,7 +74,7 @@ p.personinfo {
 p.box {
   /*temp: adjust font-family to make boxes align*/
   /*font-family: Arial, sans-serif;*/
-  fond-size: 8pt;
+  font-size: 8pt;
   font-weight: bold;
   background-color: #E1D697;
   border: solid gray 2px;
