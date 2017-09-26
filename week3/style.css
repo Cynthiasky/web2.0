@@ -1,0 +1,15 @@
+#icon {
+  background: url("assets/images/atplus_green.png");
+  background-color: rgba(48, 63, 159, 1);	
+}
+
+
+#icon img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#info-bar span {
+	color: #079E6E;
+}
