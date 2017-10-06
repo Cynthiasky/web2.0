@@ -46,10 +46,10 @@ li {
   border-radius: 50%;
   bottom: 30%;
   left: 45%;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 
@@ -60,10 +60,10 @@ li {
 
 #button:hover .page {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 .mine span {
@@ -71,18 +71,18 @@ li {
   color: #079E6E;
   margin-left: 3px;
   font-size: 20px;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 #button:hover .mine span {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 .user {
@@ -98,10 +98,10 @@ li {
 }
 #button:hover .user {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 .comment {
@@ -117,10 +117,10 @@ li {
 }
 #button:hover .comment {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 .posted {
@@ -143,18 +143,18 @@ li {
   position: absolute;
   height: 0;
   width: 0;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 #control-ring {
   clear: both;
-  -webkit-transition: all 0.8s ease-in-out 0.5s;
-  -moz-transition: all 0.8s ease-in-out 0.5s;
-  -o-transition: all 0.8s ease-in-out 0.5s;
-  transition: all 0.8s ease-in-out 0.5s;
+  -webkit-transition: all 0.5s ease-in-out 0.5s;
+  -moz-transition: all 0.5s ease-in-out 0.5s;
+  -o-transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.5s;
 }
 
 #control-ring .button {
