@@ -23,6 +23,7 @@ li {
 }
 
 #info-bar {
+  vertical-align: bottom;
   opacity: 0;
   height: 10px;
   width: 10px;
@@ -31,10 +32,10 @@ li {
   position: fixed;
   bottom: 20%;
   left: 50%;
-  -webkit-transition: all 0.8s ease-out 0.2s;
-  -moz-transition: all 0.8s ease-out 0.2s;
-  -o-transition: all 0.8s ease-out 0.2s;
-  transition: all 0.8s ease-out 0.2s;
+  -webkit-transition: all 0.5s ease-out 0.5s;
+  -moz-transition: all 0.5s ease-out 0.5s;
+  -o-transition: all 0.5s ease-out 0.5s;
+  transition: all 0.5s ease-out 0.5s;
 }
 
 #button:hover #info-bar {
@@ -45,10 +46,10 @@ li {
   border-radius: 50%;
   bottom: 30%;
   left: 45%;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 
@@ -59,10 +60,10 @@ li {
 
 #button:hover .page {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 .mine span {
@@ -70,18 +71,18 @@ li {
   color: #079E6E;
   margin-left: 3px;
   font-size: 20px;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 #button:hover .mine span {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 .user {
@@ -97,10 +98,10 @@ li {
 }
 #button:hover .user {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 .comment {
@@ -116,10 +117,10 @@ li {
 }
 #button:hover .comment {
   opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  -moz-transition: all 0.8s ease-in-out;
-  -o-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 .posted {
@@ -142,18 +143,18 @@ li {
   position: absolute;
   height: 0;
   width: 0;
-  -webkit-transition: all 0.8s ease-in-out 0.2s;
-  -moz-transition: all 0.8s ease-in-out 0.2s;
-  -o-transition: all 0.8s ease-in-out 0.2s;
-  transition: all 0.8s ease-in-out 0.2s;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 #control-ring {
   clear: both;
-  -webkit-transition: all 0.8s ease-in-out 0.2s;
-  -moz-transition: all 0.8s ease-in-out 0.2s;
-  -o-transition: all 0.8s ease-in-out 0.2s;
-  transition: all 0.8s ease-in-out 0.2s;
+  -webkit-transition: all 0.8s ease-in-out 0.5s;
+  -moz-transition: all 0.8s ease-in-out 0.5s;
+  -o-transition: all 0.8s ease-in-out 0.5s;
+  transition: all 0.8s ease-in-out 0.5s;
 }
 
 #control-ring .button {
@@ -244,10 +245,10 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
-  -webkit-transition: all 0.5s ease-in 0.5s;
-  -moz-transition: all 0.5s ease-in 0.5s;
-  -o-transition: all 0.5s ease-in 0.5s;
-  transition: all 0.5s ease-in 0.5s;
+  -webkit-transition: all 0.8s ease-in 0.5s;
+  -moz-transition: all 0.8s ease-in 0.5s;
+  -o-transition: all 0.8s ease-in 0.5s;
+  transition: all 0.8s ease-in 0.5s;
 }
 
 #button:hover .apb {
@@ -260,8 +261,8 @@ li {
   -moz-transform: scale(2);
   -o-transform: scale(2);
   transform: scale(2);
-  -webkit-transition: all 0.5s ease-in 0.5s;
-  -moz-transition: all 0.5s ease-in 0.5s;
-  -o-transition: all 0.5s ease-in 0.5s;
-  transition: all 0.5s ease-in 0.5s;
+  -webkit-transition: all 0.8s ease-in 0.5s;
+  -moz-transition: all 0.8s ease-in 0.5s;
+  -o-transition: all 0.8s ease-in 0.5s;
+  transition: all 0.8s ease-in 0.5s;
 }
