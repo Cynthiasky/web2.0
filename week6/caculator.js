@@ -1,28 +1,77 @@
-//use reverse polish method to calculate, instead of eval()
+var res = "";
+var reg_opr1 = /[\-\.]/, reg_opr2 = /[\+\-\*\/]/, reg_opr3 = /[\(\)]/;
+var reg_num = /\d+/;
+function get(value) {
+  var inp = document.getElementById("input");
+  if(value == "←") {
+    if(res != "") res = res.slice(0, -1);
+  }
+  else if(value == "CE") res = "";
+  else if(reg_opr1.test(value) || reg_opr3.test(value)) res += value;
+  else if(reg_opr2.test(value) && res != "" && !reg_opr2.test(res[-1]))
+      res += value;
+  else if(reg_num.test(value)) res += value;
+  else if(value == "=") {
+    if(res != "") {
+      try {
+          var tmp = eval(res);
+          if(isNaN(tmp))
+            alert("not a number!");
+          res = tmp;
+      }
+      catch(exp) {
+        alert("invalid!");
+        inp.value = "0";
+        res = "";
+      }
+    }
+  }
 
-//stack to store nums, operators and temp results
-var nums = [], oprs = [], tmps = [];
-var res = 0;
+  else
+    alert("undefined input!");
+
+  if(res != "") inp.value = res;
+  else inp.value = "0";
+}
+
+
+window.onload = function() {
+    var but = document.getElementsByTagName('button');
+    for(var i = 0; i < but.length; i++){
+       but[i].onclick = (function(k){
+        return function(){   
+            get(but[k].innerText);
+        }
+       })(i);
+    }
+}
+/*
+//use reverse polish method to calculate, instead of eval()    ----unfinished
+
+//stack to store operators and temp inputs
+var oprs = [], tmps = [];
 var reg_num = /\d+/, reg_opr = /[\-\.]/;
 var sum = "";
-
 function calculate(value) {
   var in = document.getElementById("input");
   if(value == "←") {
     if(sum != "") sum = sum.slice(0, -1);
-    in.textContent = in.textContent.slice(0, -1);
-    if(!in.textContent) in.textContent = "0";
+    in.value = in.value.slice(0, -1);
+    if(!in.value) in.value = "0";
   }
   else if(value == "CE") {
     sum = "";
-    nums = [];
+    res = "";
     oprs = [];
     tmps = [];
-    in.textContent = "0";
+    in.value = "0";
   }
   //if it's a number, connect it
-  if(reg_num.test(value))
+  else if(reg_num.test(value)) {
     sum += value;
+    res += value;
+    in.value += value;
+  }
   else {
     tmps.push(parseInt(sum));
     sum = "";
@@ -50,71 +99,17 @@ function calculate(value) {
       }
       oprs.push(value);
     }
-  }
-
-  if(value == "="){
+    else if(value == ".") {
+      todo
+    }
+    else if(value == "=") {
+      while(!oprs.empty()) {
+        tmps.push(oprs.pop());
+    }
+    for(var i = tmps.length - 1; i >= 0; i--) {
+      todo
+    }
     oprs = [];
-    for(var i = 0; i < nums.length; i++) {
-      if(reg_num.test(nums[i])) {
-          tmps.push(parseFloat(nums[i]));
-      }
-      else if(reg_opr.test(nums[i])) {
-        if(nums[i] == "-") {
-          tmps.push(-tmps.pop());
-        }
-        else if(nums[i] == ".") {
-          tmps[tmps.length-2]=(tmps.pop()/10);
-        }
-      }
-      else {
-        if(nums[i] == "+")
-          tmps.push(parseFloat(tmps.pop()) + parseFloat(tmps.pop()));
-        if(nums[i] == "-")
-          tmps.push(parseFloat(tmps.pop()) - parseFloat(tmps.pop()));
-        if(nums[i] == "*")
-          tmps.push(parseFloat(tmps.pop()) * parseFloat(tmps.pop()));
-        if(nums[i] == "/")
-          tmps.push(parseFloat(tmps.pop()) / parseFloat(tmps.pop()));
-        if(nums[i] == "(")
-
-      }
-    }
-    nums = [];
-    if(tmps.length == 1) {   
-      if(isNaN(tmps[0])) {
-        in.textContent = "Not a number!";
-        tmps = [];
-      }
-      else
-        in.textContent = tmps[0];
-    }
-    else {
-      res = tmps[0] + tmps[1];
-      if(isNaN(res)){
-        in.textContent = "Not a number!";
-        tmps = [];
-      }
-      else
-        in.textContent = result;
-    }
-  } 
-}
-
-
-/*
-function showError(message) {
-  document.getElementById("error").textContent = message;
-}
-function validInput(field, alerttxt) {
-  with (field) {
   }
 }
 */
-
-
-window.onload = function() {
-  var but = document.getElementByTagName("button");
-  for(var i = 0; i < but.length; i++) {
-    but[i].onclick = calculate(but[i].innerText);
-  }
-}
