@@ -10,6 +10,7 @@ function get(value) {
   if(eql == 1) {
     eql = 0;
     outp.textContent = "0";
+    inp.textContent = "0";
   }
   
   if(value == "←") {
@@ -61,7 +62,7 @@ function get(value) {
         res = "";
       }
       outp.textContent = res;
-      inp.textContent = "0";
+      //inp.textContent = "0";
     }
   }
 
