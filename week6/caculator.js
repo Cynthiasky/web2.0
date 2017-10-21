@@ -1,49 +1,92 @@
-var res = "";
-var reg_opr1 = /[\-\.]/, reg_opr2 = /[\+\-\*\/]/, reg_opr3 = /[\(\)]/;
+/* README: reverse polish way is unfinished and this is the eval() way */
+
+var res = String("");
+var reg_opr = /[\+\-\*\/\(\)]/, reg_opr1 = /[\-\.]/, reg_opr2 = /[\+\-\*\/]/, reg_opr3 = /[\(\)]/;
 var reg_num = /\d+/;
+var eql = 0;
 function get(value) {
+  var outp = document.getElementById("output");
   var inp = document.getElementById("input");
+  if(eql == 1) {
+    eql = 0;
+    outp.textContent = "0";
+  }
+  
   if(value == "←") {
     if(res != "") res = res.slice(0, -1);
   }
-  else if(value == "CE") res = "";
-  else if(reg_opr1.test(value) || reg_opr3.test(value)) res += value;
-  else if(reg_opr2.test(value) && res != "" && !reg_opr2.test(res[-1]))
-      res += value;
-  else if(reg_num.test(value)) res += value;
+  else if(value == "CE") {
+    res = "";
+    eql = 0;
+  }
+  else if(value == ".") {
+    if(res != "" && res[res.length - 1] == ".")
+      res = res.slice(0, -1);
+    res += value;
+  }
+  else if(reg_opr2.test(value)) {
+    if(res != "" && reg_opr2.test(res[res.length - 1]))
+      res = res.slice(0, -1);
+    else if(res == "") res += "0";
+    res += value;
+  }
+  else if(reg_opr3.test(value)) res += value;
+  else if(reg_num.test(value)) {
+    if(res == "0") res = "";
+    if(res.length >= 2 && res[res.length - 1] == "0" && 
+      reg_opr.test(res[res.length - 2]))
+      res = res.slice(0, -1);
+    res += value;
+  }
+
   else if(value == "=") {
+    eql = 1;
     if(res != "") {
       try {
-          var tmp = eval(res);
-          if(isNaN(tmp))
-            alert("not a number!");
-          res = tmp;
+        var tmp = eval(res);
+        if(isNaN(tmp))
+          alert("not a number!");
+        res = String(tmp);
+        var dot_pos = res.search(/\./);
+        if(dot_pos != -1) {
+          if(res.length > (dot_pos + 10))
+            res = res.slice(0, dot_pos + 9);
+        }
       }
+
       catch(exp) {
         alert("invalid!");
-        inp.value = "0";
+        outp.textContent = "0";
+        inp.testContent = "0";
         res = "";
       }
+      outp.textContent = res;
+      inp.textContent = "0";
     }
   }
 
   else
     alert("undefined input!");
-
-  if(res != "") inp.value = res;
-  else inp.value = "0";
+  if(eql == 0) {
+    if(res != "") inp.textContent = res;
+    else {
+      outp.textContent = "0";
+      inp.textContent = "0";
+    }
+  }
+  
 }
 
 
 window.onload = function() {
-    var but = document.getElementsByTagName('button');
-    for(var i = 0; i < but.length; i++){
-       but[i].onclick = (function(k){
-        return function(){   
-            get(but[k].innerText);
-        }
-       })(i);
-    }
+  var but = document.getElementsByTagName('button');
+  for(var i = 0; i < but.length; i++){
+     but[i].onclick = (function(k){
+      return function(){   
+        get(but[k].innerText);
+      }
+    })(i);
+  }
 }
 /*
 //use reverse polish method to calculate, instead of eval()    ----unfinished
