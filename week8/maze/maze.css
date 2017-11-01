@@ -1,0 +1,143 @@
+head, body {
+  font-family: Century Gothic, Sans-serif;
+  margin: 0;
+}
+
+h1, .midsize {
+	text-align: center;
+	margin: 0;
+}
+
+.midsize {
+  font-size: 23px;
+}
+
+.demo {
+	font-size: 15px;
+	text-align: left;
+}
+
+#info {
+	height: 70px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#maze_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.cheat {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  height: 300px;
+}
+
+#pass_left {
+  float: left;
+  width: 30%;
+}
+
+#pass_right {
+	float: right;
+	right: 2.8%;
+	top: 23%;
+	width: 30%;
+}
+
+.maze_wall, #demo_wall {
+  background-color: #eeeeee;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+}
+
+.red_wall {
+  background-color: red;
+  border: 1px solid black;
+  display: inline-block;
+  position: relative;
+}
+
+#topl {
+  left: 1px;
+  top: 1px;
+  height: 200px;
+  width: 130px;
+}
+
+#topm {
+	border-right: none;
+	border-left: none;
+  left: -5px;
+  top: -159px;
+  height: 40px;
+  width: 200px;
+  z-index: 1;
+}
+
+#topr {
+	right: 11px;
+	top: 1px;
+  height: 200px;
+  width: 130px;
+}
+
+#Sblock, #Eblock {
+	position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+}
+
+#Sblock {
+	left: 1px;
+	top: -128px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+
+#Eblock {
+	right: -288px;
+	top: -128px;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+#downm {
+	border-bottom: none;
+	top: -121px;
+	left: 145px;
+  height: 150px;
+  width: 100px;
+  z-index: 1;
+}
+
+#bottom {
+  top: -130px;
+	left: 0;
+  width: 460px;
+  height: 35px;
+}
+
+#demo_container {
+	height: 150px;
+	width: 600px;
+	margin: auto;
+	position: relative;
+	bottom: 80px;
+}
+
+#demo_wall {
+	width: 100px;
+	height: 30px;
+	position: relative;
+	left: 38%;
+}
