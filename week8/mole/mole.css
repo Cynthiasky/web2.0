@@ -1,0 +1,79 @@
+body {
+	font-family: Century Gothic, Sans-serif;
+	margin: 0;
+}
+
+h1, .midsize {
+	text-align: center;
+	margin: 0;
+}
+
+.midsize {
+	font-size: 23px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#info_container {
+	margin: auto;
+	width: 500px;
+	height: 100px;
+}
+
+
+
+h2, #detail {
+	font-size: 15px;
+	text-align: left;
+	width: 700px;
+	margin: 20px auto;
+}
+
+#start, #time_container, #info, #score_container {
+	height: 30px;
+	width: 200px;
+	display: inline-block;
+    overflow: hidden;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+#start, #info {
+	border: 1px solid gray;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#time, #score {
+	height: 20px;
+	width: 50px;
+	border: 1px solid gray;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#game_container {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	height: 240px;
+	width: 450px;
+	margin: auto;
+}
+
+.mole {
+	border-radius: 50%;
+	border: 1px solid gray;
+    margin: 10px 10px 10px 15px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
+
+.active {
+	border-radius: 50%;
+	border: 1px solid blue;
+    margin: 10px 10px 10px 15px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
