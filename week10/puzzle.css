@@ -1,0 +1,84 @@
+h1 {
+  text-align: center;
+}
+
+#puzzle_positioner {
+  margin: auto;
+  height: 440px;
+  width: 440px;
+  border: solid red;
+  display: inline-block;
+}
+
+#function_bar {
+  width: 400px;
+  height: 450px;
+  display: inline-block;
+  float: left;
+}
+
+#preview {
+  text-align: center;
+}
+
+#border {
+  border: 2px solid gray;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+#preview img {
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  
+  transition: all 2s ease-in-out 0.5s;
+  -moz-transition: all 2s ease-in-out 0.5s;
+  -webkit-transition: all 2s ease-in-out 0.5s;
+  -o-transition: all 2s ease-in-out 0.5s;
+}
+
+#preview img:hover {
+  opacity: 1;
+}
+
+#steps {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+#counter {
+  border: 1px solid black;
+  width: 70px;
+  height: 30px;
+  text-align: right;
+}
+
+button {
+  margin-top: 50px;
+  margin-left: 30%;
+  height: 40px;
+  width: 100px;
+}
+
+.piece {
+  height: 110px;
+  width: 110px;
+  border: 2px solid LightGrey;
+  display: inline-block;
+  background: url("img/panda.jpg") no-repeat;
+
+  position: relative;
+}
+
+.piece:hover {
+  border: 1px solid LightGrey;
+  transform: scale(1.03,1.03);
+  -moz-transform: scale(1.03,1.03);
+  -webkit-transform: scale(1.03,1.03);
+  -o-transform: scale(1.03,1.03);
+
+  cursor: pointer;
+}
