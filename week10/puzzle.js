@@ -14,7 +14,6 @@ window.onload = function() {
     for(var order = 0; order < 15; order++) {
       init_order.push(order);
     }
-    
     shuffle();
     if(playing) {
       var pieces = document.getElementsByClassName("piece");
@@ -116,7 +115,8 @@ window.onload = function() {
   function check() {
     var pieces = document.getElementsByClassName("piece");
     for(var i = 0; i < pieces.length; i++) {
-      if(init_order[i] != i) return;
+      var tmp = "piece" + " no" + i;
+      if(pieces[i].className != tmp) return;
     }
     //var tmp = document.getElementsByClassName("hidden");
     //tmp[0].classList.remove("hidden");
