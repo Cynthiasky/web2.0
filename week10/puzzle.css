@@ -2,12 +2,13 @@ h1 {
   text-align: center;
 }
 
-#puzzle_positioner {
+#piece_container {
   margin: auto;
-  height: 440px;
-  width: 440px;
+  height: 408px;
+  width: 408px;
   border: solid red;
   display: inline-block;
+  font-size: 0;
 }
 
 #function_bar {
@@ -64,21 +65,89 @@ button {
 }
 
 .piece {
-  height: 110px;
-  width: 110px;
-  border: 2px solid LightGrey;
+  height: 100px;
+  width: 100px;
+  border: 1px solid LightGrey;
   display: inline-block;
+  padding: 0;
   background: url("img/panda.jpg") no-repeat;
-
-  position: relative;
+  background-position: 0% 0%;
 }
 
 .piece:hover {
-  border: 1px solid LightGrey;
   transform: scale(1.03,1.03);
   -moz-transform: scale(1.03,1.03);
   -webkit-transform: scale(1.03,1.03);
   -o-transform: scale(1.03,1.03);
 
   cursor: pointer;
+}
+
+.no0 {
+  background-position: -5% -5%;
+}
+
+.no1 {
+  background-position: 34.5% -5%;
+}
+
+.no2 {
+  background-position: 74% -5%;
+}
+
+.no3 {
+  background-position: 113.5% -5%;
+}
+
+.no4 {
+  background-position: -5% 34.5%;
+}
+
+.no5 {
+  background-position: 34.5% 34.5%;
+}
+
+.no6 {
+  background-position: 74% 34.5%;
+}
+
+.no7 {
+  background-position: 113.5% 34.5%;
+}
+
+.no8 {
+  background-position: -5% 74%;
+}
+
+.no9 {
+  background-position: 34.5% 74%;
+}
+
+.no10 {
+  background-position: 74% 74%;
+}
+
+.no11 {
+  background-position: 113.5% 74%;
+}
+
+.no12{
+  background-position: -5% 113.5%;
+}
+
+.no13 {
+  background-position: 34.5% 113.5%;
+}
+
+.no14 {
+  background-position: 74% 113.5%;
+}
+
+.no15 {
+  background-position: 113.5% 113.5%;
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
 }
