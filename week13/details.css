@@ -1,0 +1,44 @@
+#icon {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  margin-left: 40%;
+  margin-right: auto;
+  margin-top: 30px;
+  vertical-align: top;
+  background-size: cover;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+ }
+
+html {
+  font-family: Century Gothic, Sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 40%;
+  margin-right: auto;
+  color: DarkOliveGreen;
+  display: inline-block;
+}
+
+.res {
+  color: DarkOliveGreen;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+#signup_container {
+  border: 1px solid DarkOliveGreen;
+  height: 360px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.changebg {
+  background-image: url("./img/icon0.jpg");
+}

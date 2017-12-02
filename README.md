@@ -25,6 +25,7 @@ and
   
   + fifteen puzzle game
 
-## week11
-
-
+## week13
+  + design a signin system
+  through <http://localhost:8000/>
+  + notice: can't use http server, instead use file I/O directly.
