@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>register</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="signup.css" />
+    <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="signup.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <h1>user Register</h1>
+    <div id="icon"></div>
+    <div action="details" id="signup_container">
+      <div id="transbox">
+      <form method="POST">
+        <div class="bar">Username:</br>
+        <input type="text" class="input" name="username"><div id="name_error" class="error">6~18 letters/numbers/_, must start with letters</div></div>
+        <div class="bar">UserID:</br>
+        <input type="text" class="input" name="userid"><div id="id_error" class="error">8 numbers, can't start with 0</div></div>
+        <div class="bar">Phone:</br>
+        <input type="text" class="input" name="phone"><div id="phone_error" class="error">11 numbers, can't start with 0</div></div>
+        <div class="bar">Email:</br>
+        <input type="text" class="input" name="email"><div id="email_error" class="error">xxx@xxx.xxx</div></div>
+        <input type="submit" id="submit" value="Submit" />
+        <input type="reset" id="reset" value="Reset" />
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

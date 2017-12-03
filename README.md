@@ -29,3 +29,10 @@ and
   + design a signin system
   through <http://localhost:8000/>
   + notice: can't use http server, instead use file I/O directly.
+  
+  tips:
+    + previous: better UI but haven't finish server
+    
+    + proj: jade edition(following EricWang's example on youku) and not finished
+
+    + tmp: finished but not include front js check

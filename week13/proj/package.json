@@ -1,0 +1,14 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "proj for week13",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cynthia",
+  "license": "ISC",
+  "dependencies": {
+    "jade": "^1.11.0"
+  }
+}

@@ -1,0 +1,1 @@
+{"aaaaaa":{"username":"aaaaaa","stuid":"11111111","mobile":"11111111111","email":"xxx@xxx.com"},"aaaaab":{"username":"aaaaab","userid":"11111111","phone":"11111111111","email":"aaaaaa@aaa.cn"}}
