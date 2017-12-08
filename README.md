@@ -36,3 +36,11 @@ and
     + proj: jade edition(following EricWang's example on youku) and not finished
 
     + tmp: finished but not include front js check
+
+## week14
+  + ring menu async calculator
+    + S1 man-machine interaction
+    + S2 auto click in A~E order
+    + S3 auto click A~E at the same time
+    + S4 auto click A~E in random order
+    + S5 independent (TODO)
