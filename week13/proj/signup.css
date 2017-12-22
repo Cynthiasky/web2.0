@@ -10,52 +10,18 @@ h1 {
   display: inline-block;
 }
 
-#signup_container {
-  background-image: url("badger.jpg");
-  background-position: 0% 40%;
-  border: 1px solid DarkOliveGreen;
-  height: 450px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 1;
-}
-
-#transbox {
-  width: 500px;
-  height: 360px;
-  margin: 50px;
-  background-color: #ffffff;
-  border: 1px solid DarkOliveGreen;
-  opacity: 0.7;
-}
 
 form {
   margin: 40px;
   color: DarkOliveGreen;
 }
 
-.bar {
-  margin-left: auto;
-  margin-bottom: 25px;
-}
-
 .error {
-  width: 200px;
-  height: 20px;
-  display: inline-block;
-  text-align: bottom;
-  font-size: 13px;
-  margin-left: 25px;
-  color: DarkOlivenGreen;
-}
-
-.warning {
   color: DarkRed;
 }
 
 
-#reset, #submit {
+.reset, .submit {
   color: DarkOliveGreen;
   margin-left: 90px;
   height: 30px;
@@ -63,24 +29,11 @@ form {
   border-radius: 2%;
 }
 
- #input {
+ input {
   border: 1px solid DarkGreen;
   height: 30px;
   width: 200px;
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
- }
-
-#icon {
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  display: inline-block;
-  margin-left: 3%;
-  vertical-align: top;
-  background-image: url("icon0.jpg");
-  background-size: cover;
-  background-position: 50% 20%;
-  background-repeat: no-repeat;
  }

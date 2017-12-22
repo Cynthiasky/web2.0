@@ -3,13 +3,15 @@ var urlTool = require("url");
 var qs = require("querystring");
 var jade = require("jade");
 var fs = require("fs");
+var validator = require("./validator");
 
 var users = {};
 
 
 http.createServer(function(req, res) {
   switch(req.url) {
-    case "/favicon":
+    case "/validator.js":
+      sendFile(res, "validator.js", "text/javascript");
       break;
     case "/signup.js":
       sendFile(res, "signup.js", "text/javascript");
@@ -50,14 +52,13 @@ function registUser(req, res) {
 
 
 function checkUser(user) {
-  var msg = "";
-  for(var i = 0; i < users.length; i++) {
-    if(user.username == users[i].username) msg += "a";
-    if(user.userid == users[i].userid) msg += "b";
-    if(user.phone == users[i].phone) msg += "c";
-    if(user.email == users[i].eamil) msg += "d";
+  var errorMessages = [];
+  for(var key in user) {
+    if(!validator.isFieldValid(key, user[key])) errorMessages.push(validator.form[key].errorMessage);
+    if(!validator.isAttrValueUnique(users, user, key)) errorMessages.push(
+      "key: " + key + " is not unique by value: " + user[key]);
   }
-  if(msg.length > 0) throw msg;
+  if(errorMessages.length > 0) throw new Error(errorMessages.join("<br />"));
 }
 
 function parseUser(message) {

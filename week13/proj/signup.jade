@@ -3,26 +3,33 @@ html
   head
     title register
     link(rel="stylesheet" href="signup.css")
-    script(type="text/javascript" rel="jquery-3.2.1.min.js")
-    script(type="text/javascript" rel="signup.js")
+    script(type="text/javascript" src="jquery-3.2.1.min.js")
+    script(type="text/javascript" src="signup.js")
+    script(type="text/javascript" src="validator.js")
 
   body
     h1 Register
-    div(id="icon")
-    div(id="signup_container")
-      div(id="transbox")
-        form(method="POST")
-          div(class="bar") Username:</br>
-            input(class="input" id="username" name="username" value=user.username)
-            div(id="name_error" class="error") 6~18 letters/numbers/_, must start with letters
-          div.userid(class="bar") Userid:</br>
-            input(class="input" id="userid" name="userid" value=user.userid)
-            div(id="userid_error" class="error") 8 numbers, can't start with 0
-          div.phone(class="bar") Phone:</br>
-            input(class="input" id="phone" name="phone" value=user.phone)
-            div(id="phone_error" class="error") 11 numbers, can't start with 0
-          div.email(class="bar") Email:</br>
-            input(class="input" id="email" name="email" value=user.email)
-            div(id="email_error" class="error") xxx@xxx.xxx
-          input(type="reset" id="reset" value="reset")
-          input(type="submit" id="submit" value="submit")
+    form(method="POST" id="signup")
+      
+        div.username
+          label(for="username") Username
+          input(id="username" name="username" value = user.username)
+          span.error
+
+        div.userid
+          label(for="userid") UserID
+          input(id="userid" name="userid" value = user.userid)
+          span.error
+
+        div.phone
+          label(for="phone") Phone
+          input(id="phone" name="phone" value = user.phone)
+          span.error
+
+        div.eamil 
+          label(for="email") Email
+          input(id="email" name="email" value = user.email)
+          span.error
+        div.buttons
+          input.button.reset(type="reset" value="reset")
+          input.button.submit(type="submit" value="submit")
