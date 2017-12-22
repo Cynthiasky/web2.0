@@ -26,7 +26,7 @@ and
   + fifteen puzzle game
 
 ## week13
-  + design a signin system
+  + design a signup system
   through <http://localhost:8000/>
   + notice: can't use http server, instead use file I/O directly.
   
@@ -44,3 +44,6 @@ and
     + S3 auto click A~E at the same time
     + S4 auto click A~E in random order
     + S5 independent (TODO)
+
+## week16
+  + design a signin system
